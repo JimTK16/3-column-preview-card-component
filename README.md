@@ -11,8 +11,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: https://github.com/JimTK16/profile-card-component
-- Live Site URL: https://profile-card-component-by-jim.netlify.app/
+- Solution URL: https://github.com/JimTK16/3-column-preview-card-component
+- Live Site URL: https://3-column-preview-card-component-jim.netlify.app/
 
 ## My process
 
@@ -23,7 +23,3 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-
-### What I learned
-
-- Add multiple background images and position them to match the design.

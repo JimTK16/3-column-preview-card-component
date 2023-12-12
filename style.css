@@ -12,6 +12,10 @@ svg {
   max-width: 100%;
 }
 
+button {
+  font: inherit;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -20,15 +24,114 @@ html {
   --bright-orange: hsl(31, 77%, 52%);
   --dark-cyan: hsl(184, 100%, 22%);
   --very-dark-cyan: hsl(179, 100%, 13%);
-  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --transparent-white: hsla(0, 0%, 100%, 0.7);
   --light-gray: hsl(0, 0%, 95%);
 }
 
 body {
-  font-family: "Big Shoulders Display", sans-serif;
   font-family: "Lexend Deca", sans-serif;
   display: grid;
   place-content: center;
   min-height: 100svh;
   line-height: 1.5;
+}
+
+.main {
+  max-width: 33rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.card {
+  padding: 5rem 5rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.8rem;
+}
+
+.heading {
+  font-family: "Big Shoulders Display", sans-serif;
+  text-transform: uppercase;
+  color: var(--light-gray);
+  font-size: 4rem;
+}
+
+.intro-text {
+  color: var(--transparent-white);
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+}
+
+.sedan {
+  background-color: var(--bright-orange);
+}
+
+.suv {
+  background-color: var(--dark-cyan);
+}
+
+.luxury {
+  background-color: var(--very-dark-cyan);
+}
+
+.btn {
+  width: 60%;
+  padding: 1.6rem 2rem;
+  border-radius: 4rem;
+  border: none;
+  outline: none;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.btn:hover {
+  border: 1.5px solid white;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-sedan {
+  color: var(--bright-orange);
+  border: 1.5px solid var(--bright-orange);
+}
+.btn-suv {
+  color: var(--dark-cyan);
+  border: 1.5px solid var(--dark-cyan);
+}
+.btn-luxury {
+  color: var(--very-dark-cyan);
+  border: 1.5px solid var(--very-dark-cyan);
+}
+
+.btn-sedan:hover {
+  background-color: var(--bright-orange);
+}
+
+.btn-suv:hover {
+  background-color: var(--dark-cyan);
+}
+.btn-luxury:hover {
+  background-color: var(--very-dark-cyan);
+}
+
+@media screen and (min-width: 1440px) {
+  .main {
+    max-width: 95rem;
+    display: flex;
+  }
+
+  .heading {
+    font-size: 4rem;
+  }
+
+  .intro-text {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    margin-block-start: 6rem;
+    width: 70%;
+  }
 }
